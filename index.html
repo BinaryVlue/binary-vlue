@@ -1,28 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>Binary Blue</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="images/favicon.png" rel="icon" />
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/aos/aos.css" rel="stylesheet" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header id="header" class="d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo"><img src="images/logo.svg" alt="" /></h1>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#home">HOME</a></li>
+            <li><a class="nav-link scrollto" href="#about-us">ABOUT US</a></li>
+            <li>
+              <a class="nav-link scrollto" href="#contact-us">CONTACT US</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+        <div class="social-links d-none d-md-flex align-items-center">
+          <img src="images/linkedin.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container hero-align">
+        <h1 class="hero-heading">
+          We DESIGN and DEVELOP High-Quality Software For The Modern Web
+        </h1>
+        <h2 class="card-subheader hero-subheader-area">
+          We specialize in delivering high-quality software services to help
+          businesses improve their operations and achieve their goals. Our team
+          of experienced professionals is dedicated to providing the best
+          possible solutions to meet your unique needs.
+        </h2>
+        <button class="contact-btn">CONTACT US</button>
+      </div>
+    </section>
+
+    <main id="main">
+      <section id="about-us" class="about section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h3 style="margin-bottom: 50px">SERVICES WE OFFER</h3>
+          </div>
+          <div class="row">
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <ul class="service-box">
+                <li>
+                  <div>
+                    <h5 class="card-header">Individual Software</h5>
+                    <p class="card-subheader">
+                      Say goodbye to manual errors and hello to seamless
+                      customer journeys with our custom-built software
+                      solutions! Our team will work with you to create software
+                      that tackles real-world problems and streamlines your
+                      processes. With automation on your side, you'll be able to
+                      focus on what really matters - growing your business.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h5 class="card-header">IT Consulting</h5>
+                    <p class="card-subheader">
+                      Partner with us to achieve your business goals! As IT
+                      consultants, we're experts in software development,
+                      design, and infrastructure - and we're here to help you
+                      every step of the way. Whether it's long-term projects or
+                      ongoing maintenance, we'll work tirelessly to ensure your
+                      success. Let's get started today!
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <ul class="service-box">
+                <li>
+                  <div>
+                    <h5 class="card-header">UI/UX-Design</h5>
+                    <p class="card-subheader">
+                      Don't settle for clunky, outdated enterprise software! Our
+                      UX/UI design team takes user experience seriously and is
+                      dedicated to creating modern, intuitive interfaces for all
+                      your applications. From web design to mobile apps, we'll
+                      help you stand out from the competition with sleek,
+                      user-friendly designs. Let's make your software a pleasure
+                      to use!
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h5 class="card-header">Cloud Infrastructure</h5>
+                    <p class="card-subheader">
+                      Keep your business running smoothly with our reliable,
+                      cost-effective distributed systems! Our team has the
+                      expertise to build stable, high-availability systems on
+                      the latest cloud technologies. Whether you need
+                      uninterrupted service for your team or your customers,
+                      we'll work tirelessly to ensure your success. Let us take
+                      care of the technical details so you can focus on what
+                      really matters - growing your business!
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h3>A MODERN TECHSTACK</h3>
+          </div>
+
+          <div
+            class="container hero-align"
+            data-aos="zoom-out"
+            data-aos-delay="100"
+          >
+            <p class="card-subheader card-subheader-area">
+              Looking for lightning-fast, reliable results? Our expert team uses
+              cutting-edge tools like Python, ReactJS, and PostgreSQL on
+              state-of-the-art AWS and Google Cloud infrastructure. And don't
+              worry if you've got your own tech stack - we're happy to work with
+              you to achieve your business goals. Whether it's software
+              development, design, or infrastructure, we're the partner you need
+              for long-term success. Let's work together to make your vision a
+              reality.
+            </p>
+          </div>
+
+          <div class="row icon-area card-subheader-area">
+            <div
+              class="col-lg-2 col-md-2 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="images/figma.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-2 col-md-2 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="images/tailwind.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-2 col-md-2 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="images/react.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-2 col-md-2 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="images/vue.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-2 col-md-2 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="images/php.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-2 col-md-2 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="images/python.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="row card-subheader-area">
+            <div
+              class="col-lg-2 col-md-2 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="images/jango.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-2 col-md-2 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="images/mysql.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-2 col-md-2 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="images/kuber.png" class="img-fluid" alt="" />
+            </div>
+            <div
+              class="col-lg-2 col-md-2 d-flex align-items-stretch"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <img src="images/doker.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-us" class="about section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h3 style="margin-bottom: 50px">OUR SPECIALIST TEAM</h3>
+          </div>
+          <div class="row">
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <ul class="service-box">
+                <li>
+                  <div>
+                    <h5 class="card-header">Individual Software</h5>
+                    <p class="card-subheader">
+                      Automate your processes with individually developed
+                      software that solves real-world problems. Prevent errors
+                      from manual work and get a seamless end-to-end customer
+                      journey.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h5 class="card-header">IT Consulting</h5>
+                    <p class="card-subheader">
+                      Do you need help to achieve your business goals? Benefit
+                      from our knowledge of software development, design, and
+                      infrastructure. We will be your partner for long
+                      running-projects and maintenance.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <ul class="service-box">
+                <li>
+                  <div>
+                    <h5 class="card-header">UI/UX-Design</h5>
+                    <p class="card-subheader">
+                      Enterprise software does not have to be clunky and look
+                      like it's from the 90s. We take the user experience
+                      seriously and provide a modern and intuitive way to
+                      interact with any application.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <h5 class="card-header">Cloud Infrastructure</h5>
+                    <p class="card-subheader">
+                      Stability and availability are key to your success. Our
+                      experience in distributed systems build on top of the
+                      latest cloud technologies ensures uninterrupted service
+                      for your team or customers while keeping costs low.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container py-4">
+        <div class="copyright">© 2023 binaryvlue. All rights reserved.</div>
+        <div class="credits">
+          <a href="#">Contact Us</a> | <a href="#">Legal</a>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+    >
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/waypoints/noframework.waypoints.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
   </body>
 </html>
